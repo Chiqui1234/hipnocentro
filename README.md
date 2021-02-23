@@ -2,8 +2,8 @@
 * Debes tener NodeJs y MongoDB instalados.
 * Añade a tu PATH **HIPNOCENTRO_DB** con clave **hipnocentro**.
 * Añade a tu PATH **HIPNOCENTRO_NO_REPLY_EMAIL_DIR** con clave **no-responder@hipnocentro.com**.
-* Añade a tu PATH **HIPNOCENTRO_NO_REPLY_EMAIL_PASS** con clave <solicitar por privado>.
-* Añade a tu PATH **HIPNOCENTRO_WARRANTY_CODE** con clave <solicitar por privado>.
+* Añade a tu PATH **HIPNOCENTRO_NO_REPLY_EMAIL_PASS** con clave < solicitar por privado >.
+* Añade a tu PATH **HIPNOCENTRO_WARRANTY_CODE** con clave < solicitar por privado >.
 
 # Compilar y ejecutar
 ```bash
