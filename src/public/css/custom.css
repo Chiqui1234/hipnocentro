@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+/* input:number para los pagos del panel de control */
+.uk-input-refillable {
+    font-size: 20px;
+    height: 30px;
+    margin-top: -5px !important;
+    width: 80px !important;
+    background: transparent;
+    outline: none;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    color: black;
+}
+/* UI Kit patch */
+.uk-form-icon {
+    z-index: 999;
+}
+.uk-accordion-title.minimal {
+    font-size: 16px;
+}
+.uk-accordion-content {
+    font-size: 14px;
+}
+/* UI Kit Card Title customized */
+.uk-card-body .header {padding: 0 0 20px 0;margin: 0 0 20px 0;}
+.uk-card-body .header h3 {margin: 0 !important;padding:0 !important;display: grid;align-items: center;}
+.uk-card-body .header.grid-3 {
+    display: grid;
+    grid-template-columns: 96px auto;
+    text-align: center;
+}
+.uk-card-body .uk-button.uk-button-primary {padding: 0 5px 0 5px !important;font-size: 11px !important;}
+@media (min-width: 720px) {
+    .uk-card-body .header.grid-3 {
+        grid-template-columns: 256px auto 256px;
+    }
+    .uk-card-body .uk-button.uk-button-primary {font-size: 14px !important;}
+}
+/* Width */
+.full-width {
+    width: 100%;
+}
+.read-width {
+    width: 70%;
+    margin: 0 auto;
+}
+/* Height */
+.full-height {
+    min-height: 100vh;
+}
+/* Padding */
+.padding {
+    padding: 10px;
+}
+/* Margin */
+.margin {
+    margin: 10px;
+}
+.margin-top-40 {
+    margin-top: 40px;
+}
+/* Position */
+.fixed {
+    position: fixed;
+}
+/* Grid */
+.grid {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+#categoriesNaming, #categories .grid-3 {
+    grid-template-columns: 25% auto 70px;
+}
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+.grid-8 { /* Usado sólo por la Paginación, por el momento */
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+}
+#customersNaming.grid-3, #customers .grid-3 {
+    grid-template-columns: 35% 15% 40%;
+}
+#eventsNaming, #events .grid-4 {
+    grid-template-columns: 12% 5% 12% 70%;
+    display: grid;
+}
+#directionsNaming, #directions .grid-4 {
+    grid-template-columns: 10% 40% 30% 10%;
+    display: grid;
+}
+ul.minimal { padding: 0;list-style: none; }
+ul.table li:nth-child(odd), ul.table li:nth-child(odd) { background: #eee; }
+ul.preventTable li {background: transparent !important;}
+.table li, .table li {
+    /* padding: 5px; */
+    margin-bottom: 5px;
+}
+.gap {
+    gap: 20px;
+}
+/* Center */
+h1.uk-align-center, h2.uk-align-center, h3.uk-align-center {
+    text-align: center;
+}
+#uk-customer-search h5 {
+    margin: 0 0 0 10px;
+}
+/* Input */
+textarea, select, input[type=date], input[type=time], input[type=number] {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(190, 190, 190);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 13px;
+}
+/* */
+.inline {
+    display: inline;
+}
+@media (max-width: 1279px) {
+    .floated {
+        width: 50%;
+        left: 25%;
+        top: 20px;
+        position: fixed;
+        z-index: 999;
+    }
+}
+@media (max-width: 1023px) {
+    .grid-2, .grid-3, #categories .grid-3, #customers .grid-3, .grid-4, #eventsNaming, #events .grid-4, #directionsNaming, #directions .grid-4 {
+        grid-template-columns: 100%;
+    }
+    /* Padding */
+    .uk-container, .uk-card-body {
+        padding: 10px;
+    }
+    .remove-mobile, .remove-mobile {
+        display: none !important;
+    }
+    #tabs .uk-margin-small-right {margin-right: 0 !important}
+}
+@media (max-width: 799px) {
+    
+    /* Padding */
+}

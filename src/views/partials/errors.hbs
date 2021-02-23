@@ -1,0 +1,28 @@
+{{#if success_msg}}
+<div uk-alert class="floated uk-card-default">
+    <a class="uk-alert-close" uk-close></a>
+    <h3>¡Bien!</h3>
+    <p>{{ success_msg }}</p>
+</div>
+{{/if}}
+{{#if error_msg}}
+<div uk-alert class="floated uk-card-default">
+    <a class="uk-alert-close" uk-close></a>
+    <h3>Error</h3>
+    <p>{{ error_msg }}</p>
+</div>
+{{/if}}
+{{#if error}}
+<div uk-alert class="floated uk-card-default">
+    <a class="uk-alert-close" uk-close></a>
+    <h3>Error</h3>
+    <p>{{ error }}</p>
+</div>
+{{/if}}
+{{#each errors}}
+    <a onclick="this.style.display = 'none';" class="no-border cursor-pointer"><div class="alert violet padding rounded">
+        <p> <i class="far fa-window-close close"></i>
+            {{ text }}
+        </p>
+    </div></a>
+{{/each}}

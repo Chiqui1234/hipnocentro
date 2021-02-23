@@ -1,0 +1,47 @@
+<style>
+    /* Temporal, luego se muda a .css */
+    @keyframes pulse {
+        100% {opacity: 0}
+    }
+    .uk-animation-pulse {
+        animation: 1s pulse infinite;
+    }
+</style>
+{{> panel/dashboardWelcome }}
+<div id="app" class="uk-container uk-margin content-background full-height">
+    <ul class="uk-tab uk-padding" uk-switcher>
+        <li @click="getCategories()">
+            <a><span uk-icon="tag"></span><div class="remove-mobile"> CATEGORÍAS</div></a>
+        </li>
+        <li @click="getDirections(30)">
+            <a><span uk-icon="home"></span><div class="remove-mobile"> DIRECCIONES</div></a></li>
+        <li @click="getEvents(1, 0)">
+            <a><span uk-icon="world"></span><div class="remove-mobile"> EVENTOS</div></a>
+        </li>
+        <li @click="getCustomers(30)">
+            <a><span uk-icon="users"></span><div class="remove-mobile"> CLIENTES</div></a>
+        </li>
+    </ul>
+    {{> notifications/normalText }}
+    {{!-- Mini-apps --}}
+    <ul class="uk-switcher">
+        <li>{{> panel/dashboardCategories }}</li>
+        <li>{{> panel/dashboardDirections }}</li>
+        <li>{{> panel/dashboardEvents }}</li>
+        <li>{{> panel/dashboardCustomers }}</li>
+        {{!--  --}}
+        {{> panel/createCategory }}
+        {{> panel/createDirection }}
+        {{> panel/createEvent }}
+        {{!--  --}}
+        {{> panel/editCategory }}
+        {{> panel/editDirection }}
+        {{> panel/editEvent }}
+        {{!--  --}}
+        {{!-- {{> panel/createEvent }} --}}
+        {{!--  --}}
+        {{> panel/viewEvent }}
+        {{> panel/searchCustomers }}
+    </ul>
+</div>
+<script src="js/panel/app.min.js"></script>
